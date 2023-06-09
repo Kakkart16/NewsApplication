@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:id="@+id/mainheading"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Heading"
+                android:maxLines="2"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:ellipsize="end"
+                    android:id="@+id/content"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="content"
+                    android:maxLines="6"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:scaleType="centerCrop"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:textColor="@color/purple_200"
+                android:id="@+id/author"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By name"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/time"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="publishedAt"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
